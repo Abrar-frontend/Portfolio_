@@ -1,0 +1,73 @@
+:root{
+    --bg-color: #000000;
+    --second-bg-color: #161616;
+    --text-color: #fff;
+    --main-color: #135D66;
+}
+
+
+.skills{
+background-color: var(--bg-color);
+}
+
+.skills .container{
+    background: #e1352c54;
+    color: var(--text-color);
+    border-radius: 1rem;
+    padding: 2rem;
+    width: 90%;
+    margin: auto;
+    margin-top: 2rem;
+}
+.skills .container .row{
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    flex-wrap: wrap;
+    /* width: 100%; */
+    gap: 1.8rem;
+}
+.skills .container .bar{
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 1rem;
+    background: black;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+.skills .container .bar:hover{
+    box-shadow: 0 4px 10px var(--main-color);
+    transform: scale(1.03);
+}
+.skills .container .bar .info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.skills .container .bar .info img{
+    height: 10rem;
+}
+.skills .container .bar .info span{
+    font-size: 2rem;
+    font-weight: 500;
+    margin-left: 0.5rem;
+}
+
+@media screen and (max-width:800px){
+    .skills .container{
+        margin: 0;
+        padding: 0;
+        margin-top: 5px;
+        width: 100%;
+    }
+
+    .skills .container .row{
+        grid-template-columns: repeat(2 , 1fr);
+        margin: 0.1rem;
+        padding: 2rem 0.2rem 2rem 0.2rem;
+        gap: 0.5rem;
+        width: 100%;
+    }
+}
