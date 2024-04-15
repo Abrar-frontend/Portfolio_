@@ -48,6 +48,7 @@ background-color: var(--bg-color);
 
 .skills .container .bar .info img{
     height: 10rem;
+    width: 15rem;
 }
 .skills .container .bar .info span{
     font-size: 2rem;
