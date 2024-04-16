@@ -15,9 +15,6 @@
     <link rel="stylesheet" href="./styles/Footer.css">
 
     <title>Abrar khan</title>
-
-    <script src="./JavaScirpt/index.js"></script>
-
     
 </head>
 <body>
@@ -28,7 +25,7 @@
 
     <i class="fa-solid fa-bars" id = 'menu-icon'></i>
 
-    <nav class="navbar">
+    <nav class="navbar" id = 'navbarElem'>
         <a href="#home" class="active">Home</a>
         <a href="#services" >Services</a>
         <a href="#skills" >Skills</a>
@@ -36,6 +33,7 @@
         <!-- <a href="#" onclick="scrollToSection('experience')">Exprencise</a> -->
         <a href="#contact">Contact</a>
     </nav>
+
 </header>
 
 <!-- body part -->
@@ -270,5 +268,7 @@
 
 
 </body>
+
+<script src="./JavaScirpt/index.js"></script>  <!-- I write this line at top and face a issue that element isn't selected then I write it in bottom and my issue is solve -->
 
 </html>

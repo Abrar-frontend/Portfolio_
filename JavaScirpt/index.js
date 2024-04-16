@@ -1,7 +1,16 @@
-function scrollToSection(sectionId) {
-        const section = document.getElementById(sectionId);
-        section.scrollIntoView({ behavior: "smooth" });
-    }
 
+        let navMenu = document.getElementById('navbarElem');
+        // console.log(navBarshowHide)
+    
+        let navBarBtn = document.getElementById('menu-icon')
+        // console.log(navBarBtn)
 
-// console.log('chick it khan')
+        navBarBtn.addEventListener('click', function() {
+            // Toggle the display property
+            if (navMenu.style.display === 'block') {
+                navMenu.style.display = 'none';
+            } else {
+                navMenu.style.display = 'block';
+            }
+
+        })
